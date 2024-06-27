@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% for example in site.data.examples %}
+  <div class='example'>
+    
+    <h3>{{ example.name }}</h3>
+    
+    <code>
+      &lt;d-topics-list discourse-url="https://community.movemap.io" {{ example.args }}&gt;&lt;/d-topics-list&gt;
+    </code>
+    
+    <d-topics-list discourse-url="https://community.movemap.io" {{ example.args }}></d-topics-list>
+    
+  </div>
+{% endfor %}
